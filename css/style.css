@@ -1,95 +1,164 @@
-body {
-  margin: 0;
+#background {
+  width: 100%;
+  min-height: 90%;
+  position: absolute;
 }
 
-body img {
-  background-position: center;
-  background-size: cover;
+.container {
+  text-align: center;
+}
+
+.navbar {
+  padding-top: 25px;
+}
+
+.navbar-nav {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.navbar-toggler, .navbar-dark, .navbar-nav, .nav-link {
+  color: white !important;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.home {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.home h1 {
+  font-size: 30px;
+  font-family: "DroidSerif";
+  color: white;
+  font-style: italic;
+  line-height: 1.2;
+  z-index: 2;
+}
+
+.home h2 {
+  font-size: 60px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  z-index: 3;
   width: 100%;
 }
 
-.flex-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-line-pack: justify;
-  align-content: space-between;
-  -ms-flex-align: center;
-  align-items: center;
+.home button {
+  font-family: "Montserrat";
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  border: none;
+  background-color: #fed136;
+  z-index: 2;
 }
 
-.header {
-  -ms-flex-order: 1;
-  order: 1;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -ms-flex-item-align: stretch;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
+.home h1, .home h2, .home button {
+  margin: 0 auto 40px auto;
 }
 
-.services {
-  -ms-flex-order: 2;
-  order: 2;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -ms-flex-item-align: auto;
-  -ms-grid-row-align: auto;
-      align-self: auto;
+.services h1 {
+  font-size: 40px;
+  font-family: "Montserrat";
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.portfolio {
-  -ms-flex-order: 3;
-  order: 3;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -ms-flex-item-align: auto;
-  -ms-grid-row-align: auto;
-      align-self: auto;
+.services h2 {
+  font-size: 16px;
+  font-family: "DroidSerif";
+  color: #777777;
+  font-style: italic;
+  line-height: 1.2;
 }
 
-.about {
-  -ms-flex-order: 4;
-  order: 4;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -ms-flex-item-align: auto;
-  -ms-grid-row-align: auto;
-      align-self: auto;
+.services h3 {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #222222;
+  font-weight: bold;
 }
 
-.team {
-  -ms-flex-order: 5;
-  order: 5;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -ms-flex-item-align: auto;
-  -ms-grid-row-align: auto;
-      align-self: auto;
+.services p {
+  font-size: 14px;
+  font-family: "RobotoSlab";
+  color: #777777;
+  line-height: 1.2;
 }
 
-.contact {
-  -ms-flex-order: 6;
-  order: 6;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -ms-flex-item-align: stretch;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
+.services i {
+  color: #fed136;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #fed136;
+  border-radius: 50%;
+  line-height: 1.9;
+  width: 75px;
+  height: 75px;
+  font-size: 35px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  transition: 1s;
 }
 
-.flex-item:nth-child(7) {
-  -ms-flex-order: 7;
-  order: 7;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -ms-flex-item-align: stretch;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
+.services i:hover {
+  background-color: #fed136;
+  color: #000;
+}
+
+.portfolio [class*="col"] {
+  width: 290px;
+  padding: 0;
+}
+
+.portfolio h1 {
+  font-size: 40px;
+  font-family: "Montserrat";
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.875;
+  margin-top: 200px;
+}
+
+.portfolio h2 {
+  font-size: 16px;
+  font-family: "DroidSerif";
+  color: #777777;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 90px;
+}
+
+.portfolio h3 {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 30px;
+}
+
+.portfolio p {
+  font-size: 14px;
+  font-family: "DroidSerif";
+  color: #737373;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 80px;
 }
 /*# sourceMappingURL=style.css.map */
