@@ -2,6 +2,12 @@
   width: 100%;
   min-height: 90%;
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header {
+  position: relative;
 }
 
 .container {
