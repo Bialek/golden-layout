@@ -1,6 +1,6 @@
 #background {
     width: 100%;
-    min-height: 90%;
+    min-height: 100%;
     position: absolute;
     object-fit: cover;
 
@@ -8,6 +8,7 @@
 }
 header {
     position: relative;
+    margin-bottom: 25cvw;
 }
 .container {
     text-align: center;
@@ -31,8 +32,8 @@ header {
     padding: 0 20px;
 }
 .home {
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 15vw;
+    margin-bottom: 20vw;
     h1 {
         font-size: 30px;
         font-family: "DroidSerif";
@@ -158,5 +159,55 @@ header {
         margin-bottom: 80px;
     }
 }
+.about {
+    h1 {
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(34, 34, 34);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 14px;
+        font-family: "RobotoSlab";
+        color: rgb(119, 119, 119);
+        line-height: 1.2;
+    }
+    button {
+        
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+        border-style: solid;
+        border-width: 7px;
+        border-color: rgb(241, 241, 241);
+        border-radius: 50%;
+        background-color: rgb(254, 209, 54);
+        width: 183px;
+        height: 183px;
+        
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+}
+.team {
+    img {  
+        border-style: solid;
+        border-width: 7px;
+        border-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        background-color: rgb(17, 17, 17); 
+    }
+}
+
+
+
 
 

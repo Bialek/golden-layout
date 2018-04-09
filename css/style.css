@@ -1,6 +1,6 @@
 #background {
   width: 100%;
-  min-height: 90%;
+  min-height: 100%;
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
@@ -8,6 +8,7 @@
 
 header {
   position: relative;
+  margin-bottom: 25cvw;
 }
 
 .container {
@@ -36,8 +37,8 @@ header {
 }
 
 .home {
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin-top: 15vw;
+  margin-bottom: 20vw;
 }
 
 .home h1 {
@@ -166,5 +167,50 @@ header {
   font-style: italic;
   line-height: 1.2;
   margin-bottom: 80px;
+}
+
+.about h1 {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about p {
+  font-size: 14px;
+  font-family: "RobotoSlab";
+  color: #777777;
+  line-height: 1.2;
+}
+
+.about button {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+  border-style: solid;
+  border-width: 7px;
+  border-color: #f1f1f1;
+  border-radius: 50%;
+  background-color: #fed136;
+  width: 183px;
+  height: 183px;
+}
+
+.about a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.team img {
+  border-style: solid;
+  border-width: 7px;
+  border-color: white;
+  border-radius: 50%;
+  background-color: #111111;
 }
 /*# sourceMappingURL=style.css.map */
