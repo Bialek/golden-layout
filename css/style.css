@@ -15,11 +15,6 @@ header {
   text-align: center;
 }
 
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .navbar {
   padding-top: 25px;
 }
@@ -264,5 +259,20 @@ header {
 .team a i {
   padding: 7px;
   color: #222222;
+}
+
+.contact {
+  background-color: #000;
+  width: 100%;
+  position: relative;
+}
+
+.contact img {
+  position: absolute;
+  right: 0;
+}
+
+.contact input, .contact textarea {
+  width: 100% !important;
 }
 /*# sourceMappingURL=style.css.map */

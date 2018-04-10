@@ -13,10 +13,6 @@ header {
 .container {
     text-align: center;
 }
-.center {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .navbar {
     padding-top: 25px;
@@ -258,4 +254,17 @@ header {
     }   
 }
 
+.contact {
+    background-color: #000;
+    width: 100%;
+    position: relative;
 
+    img {
+        position: absolute;
+        right: 0;
+    }
+    input, textarea {
+        width: 100% !important;
+    }
+
+}
