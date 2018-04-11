@@ -247,7 +247,7 @@ header {
         border-radius: 50%;
         margin-left: 10px;
         i {
-            padding: 7px;
+            padding-top: 7px;
             color: #222222;
 
         }
@@ -311,19 +311,48 @@ header {
         border-radius: 3px;
         background-color: rgb(254, 209, 54);
         margin-bottom: 110px;
+
     }
 
 
 }
 
 footer {
-    p, a {
+    margin-top: 10px;
+    .social {
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #222;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            i {
+                padding-top: 12px;
+                color: #fff;
+            }
+        }
+    }
+     
+
+
+    p, a:only-child {
         font-size: 14px;
         font-family: "Montserrat";
         color: rgb(85, 85, 85);
         line-height: 1.571;
-        text-align: left;
+        float: left;
+        margin-top: 8px;
+
     }
+    a:only-child {
+        float: right; }
+
 }
 
 
+
+footer .social a ,.team a {
+    
+}

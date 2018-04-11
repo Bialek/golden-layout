@@ -257,7 +257,7 @@ header {
 }
 
 .team a i {
-  padding: 7px;
+  padding-top: 7px;
   color: #222222;
 }
 
@@ -342,11 +342,35 @@ header {
   margin-bottom: 110px;
 }
 
-footer p, footer a {
+footer {
+  margin-top: 10px;
+}
+
+footer .social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+footer .social a i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+footer p, footer a:only-child {
   font-size: 14px;
   font-family: "Montserrat";
   color: #555555;
   line-height: 1.571;
-  text-align: left;
+  float: left;
+  margin-top: 8px;
+}
+
+footer a:only-child {
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */
