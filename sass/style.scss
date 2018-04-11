@@ -12,6 +12,7 @@ header {
 }
 .container {
     text-align: center;
+    
 }
 
 .navbar {
@@ -255,16 +256,74 @@ header {
 }
 
 .contact {
-    background-color: #000;
+    padding-top: 110px;
     width: 100%;
     position: relative;
+    background-color: rgb(34, 34, 34);
+
 
     img {
+        height: 90%;
         position: absolute;
         right: 0;
+        object-fit: cover;
     }
     input, textarea {
         width: 100% !important;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        margin-bottom: 33px;
+        &::placeholder {
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(187, 187, 187);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+    }
+    h1 {
+        
+        font-size: 40px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 16px;
+        font-family: "DroidSerif";
+        color: rgb(119, 119, 119);
+        font-style: italic;
+        line-height: 1.2;
+        margin-bottom: 80px;
+    }
+    button {
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        width: 240px;
+        height: 66px;
+        border-radius: 3px;
+        background-color: rgb(254, 209, 54);
+        margin-bottom: 110px;
     }
 
+
 }
+
+footer {
+    p, a {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(85, 85, 85);
+        line-height: 1.571;
+        text-align: left;
+    }
+}
+
+

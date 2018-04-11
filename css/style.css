@@ -262,17 +262,91 @@ header {
 }
 
 .contact {
-  background-color: #000;
+  padding-top: 110px;
   width: 100%;
   position: relative;
+  background-color: #222222;
 }
 
 .contact img {
+  height: 90%;
   position: absolute;
   right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact input, .contact textarea {
   width: 100% !important;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  margin-bottom: 33px;
+}
+
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #bbbbbb;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #bbbbbb;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #bbbbbb;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.contact h1 {
+  font-size: 40px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.contact h2 {
+  font-size: 16px;
+  font-family: "DroidSerif";
+  color: #777777;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 80px;
+}
+
+.contact button {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  width: 240px;
+  height: 66px;
+  border-radius: 3px;
+  background-color: #fed136;
+  margin-bottom: 110px;
+}
+
+footer p, footer a {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.571;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
