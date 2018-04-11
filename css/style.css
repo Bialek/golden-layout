@@ -36,6 +36,10 @@ header {
   padding: 0 20px;
 }
 
+.services, .portfolio, .about, .team {
+  margin-bottom: 16vw;
+}
+
 .home {
   margin-top: 15vw;
   margin-bottom: 20vw;
@@ -62,6 +66,9 @@ header {
 }
 
 .home button {
+  width: 240px;
+  height: 65px;
+  border-radius: 3px;
   font-family: "Montserrat";
   color: white;
   font-weight: 700;
@@ -119,7 +126,7 @@ header {
   font-size: 35px;
   margin-top: 70px;
   margin-bottom: 20px;
-  transition: 1s;
+  transition: 5ms;
 }
 
 .services i:hover {
@@ -139,7 +146,6 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.875;
-  margin-top: 200px;
 }
 
 .portfolio h2 {
@@ -186,24 +192,25 @@ header {
 
 .about button {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
-  border-style: solid;
-  border-width: 7px;
-  border-color: #f1f1f1;
+  border: 7px solid #f1f1f1;
   border-radius: 50%;
   background-color: #fed136;
   width: 183px;
   height: 183px;
-}
-
-.about a {
-  color: #fff;
+  transition: 1s;
+  color: white;
   text-decoration: none;
   font-size: 18px;
   font-family: "Montserrat";
-  color: white;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
+  cursor: pointer;
+}
+
+.about button:hover {
+  border-color: #fed136;
+  color: black;
 }
 
 .team img {
@@ -212,6 +219,11 @@ header {
   border-color: white;
   border-radius: 50%;
   background-color: #111111;
+  transition: 5ms;
+}
+
+.team img:hover {
+  border-color: #111111;
 }
 
 .team h1 {
@@ -244,7 +256,10 @@ header {
   font-family: "RobotoSlab";
   color: #777777;
   line-height: 1.2;
-  text-align: center;
+}
+
+.team p:only-child {
+  margin-top: 40px;
 }
 
 .team a {
@@ -254,11 +269,17 @@ header {
   border: 3px solid #222222;
   border-radius: 50%;
   margin-left: 10px;
+  transition: 5ms;
+  color: #222222;
 }
 
 .team a i {
   padding-top: 7px;
-  color: #222222;
+}
+
+.logo img {
+  margin-bottom: 60px;
+  margin-left: 20px;
 }
 
 .contact {
@@ -340,6 +361,7 @@ header {
   border-radius: 3px;
   background-color: #fed136;
   margin-bottom: 110px;
+  transition: 5ms;
 }
 
 footer {
@@ -354,11 +376,11 @@ footer .social a {
   border-radius: 50%;
   margin-left: 10px;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 footer .social a i {
   padding-top: 12px;
-  color: #fff;
 }
 
 footer p, footer a:only-child {
@@ -372,5 +394,29 @@ footer p, footer a:only-child {
 
 footer a:only-child {
   float: right;
+}
+
+.twitter:hover {
+  border-color: #00aced;
+  background-color: #00aced;
+  color: #fff;
+}
+
+.facebook:hover {
+  border-color: #3b5998;
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.pinterest:hover {
+  border-color: #cb2028;
+  background-color: #cb2028;
+  color: #fff;
+}
+
+.google:hover {
+  border-color: #da2713;
+  background-color: #da2713;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

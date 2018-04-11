@@ -32,6 +32,9 @@ header {
     text-align: center;
     padding: 0 20px;
 }
+.services, .portfolio, .about, .team {
+    margin-bottom: 16vw;
+} 
 .home {
     margin-top: 15vw;
     margin-bottom: 20vw;
@@ -55,7 +58,9 @@ header {
         width: 100%;
     }
     button {
-
+        width: 240px;
+        height: 65px;
+        border-radius: 3px;
         font-family: "Montserrat";
         color: rgb(255, 255, 255);
         font-weight: 700;
@@ -70,6 +75,8 @@ header {
         margin: 0 auto 40px auto;
     }
 }
+
+
 .services {
     h1 {
         font-size: 40px;
@@ -112,7 +119,7 @@ header {
         font-size: 35px;
         margin-top: 70px;
         margin-bottom: 20px;
-        transition: 1s;
+        transition: 5ms;
         &:hover {
             background-color: rgb(254, 209, 54);
             color: #000;
@@ -131,7 +138,6 @@ header {
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.875;
-        margin-top: 200px;
         
     }
     h2 {
@@ -175,27 +181,27 @@ header {
         line-height: 1.2;
     }
     button {
-        
         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
-        border-style: solid;
-        border-width: 7px;
-        border-color: rgb(241, 241, 241);
+        border: 7px solid rgb(241, 241, 241);
         border-radius: 50%;
         background-color: rgb(254, 209, 54);
         width: 183px;
         height: 183px;
-        
-    }
-    a {
-        color: #fff;
+        transition: 1s;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         font-size: 18px;
         font-family: "Montserrat";
-        color: rgb(255, 255, 255);
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
+        cursor:pointer;
+        &:hover {
+            border-color: rgb(254, 209, 54);
+            color: rgb(0,0,0);
+        }  
     }
+    
 
 }
 .team {
@@ -205,6 +211,10 @@ header {
         border-color: rgb(255, 255, 255);
         border-radius: 50%;
         background-color: rgb(17, 17, 17); 
+        transition: 5ms;
+        &:hover {
+            border-color: rgb(17, 17, 17);
+        }
     }
     h1 {
         font-size: 40px;
@@ -235,8 +245,9 @@ header {
         font-family: "RobotoSlab";
         color: rgb(119, 119, 119);
         line-height: 1.2;
-        text-align: center;
-
+        &:only-child {
+            margin-top: 40px;
+        }
 
     }
     a {
@@ -246,15 +257,19 @@ header {
         border: 3px solid #222222;
         border-radius: 50%;
         margin-left: 10px;
+        transition: 5ms;
+        color: #222222;
         i {
             padding-top: 7px;
-            color: #222222;
-
-        }
-
+        } 
     }   
 }
-
+.logo {
+    img {
+    margin-bottom: 60px;
+    margin-left: 20px;
+    }
+} 
 .contact {
     padding-top: 110px;
     width: 100%;
@@ -311,6 +326,7 @@ header {
         border-radius: 3px;
         background-color: rgb(254, 209, 54);
         margin-bottom: 110px;
+        transition: 5ms;
 
     }
 
@@ -328,9 +344,10 @@ footer {
             border-radius: 50%;
             margin-left: 10px;
             margin-bottom: 10px;
+            color: #fff;
             i {
                 padding-top: 12px;
-                color: #fff;
+                
             }
         }
     }
@@ -353,6 +370,23 @@ footer {
 
 
 
-footer .social a ,.team a {
-    
+.twitter:hover {
+    border-color: rgb(0, 172, 237);
+    background-color: rgb(0, 172, 237);
+    color: #fff;
+}
+.facebook:hover {
+    border-color: rgb(59, 89, 152);
+    background-color: rgb(59, 89, 152);
+    color: #fff;
+}
+.pinterest:hover {
+    border-color: rgb(203, 32, 40);
+    background-color: rgb(203, 32, 40);
+    color: #fff;
+}
+.google:hover {
+    border-color: rgb(218, 39, 19);
+    background-color: rgb(218, 39, 19);
+    color: #fff;
 }
