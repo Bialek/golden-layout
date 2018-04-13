@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'DroidSerif';
+  src: URL("DroidSerif-Italic.ttf") format("ttf");
+}
+
 #background {
   width: 100%;
   min-height: 100%;
