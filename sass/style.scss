@@ -2,70 +2,99 @@
   font-family: 'DroidSerif';
   src: URL('DroidSerif-Italic.ttf') format('ttf');
 }
+$font-1: "Montserrat";
+$font-2: "DroidSerif";
+$font-3: "RobotoSlab";
+
 #background {
     width: 100%;
     min-height: 100%;
     position: absolute;
     object-fit: cover;
 
-
 }
 header {
     position: relative;
-    margin-bottom: 25cvw;
+    margin-bottom: 20vw;
+
 }
 .container {
-    text-align: center;
-    
-}
+    text-align: center;  
 
+}
 .navbar {
     padding-top: 25px;
+
 }
 .navbar-nav {
     display: inline-flex;
+
 }
 .navbar-toggler, .navbar-dark, .navbar-nav, .nav-link{
     color: rgb(255, 255, 255) !important;
-}
 
+}
 .nav-link {
     font-size: 14px;
-    font-family: "Montserrat";
+    font-family: $font-1;
     text-transform: uppercase;
-    text-align: center;
     padding: 0 20px;
+
 }
 .services, .portfolio, .about, .team {
-    margin-bottom: 16vw;
-} 
-.home {
-    margin-top: 15vw;
-    margin-bottom: 20vw;
-    h1 {
-        font-size: 30px;
-        font-family: "DroidSerif";
-        color: rgb(255, 255, 255);
-        font-style: italic;
-        line-height: 1.2;
-        z-index: 2;
+    margin-bottom: 13vw;
 
-    }
-    h2 {
-        font-size: 60px;
-        font-family: "Montserrat";
-        color: rgb(255, 255, 255);
+} 
+.home, .services, .portfolio, .about, .team, .contact {
+	h1 {
+		font-family: $font-1;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 1.2;
+        font-size: 40px;
+        color: rgb(34, 34, 34);
+
+	}
+	h2 {
+		font-size: 16px;
+        font-family: $font-2;
+        color: rgb(119, 119, 119);
+        font-style: italic;
+        line-height: 1.2;
+
+	}
+	h3 {
+		font-size: 18px;
+  		font-family: $font-1;
+		color: rgb(34, 34, 34);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.2;
+
+	}
+
+}
+.home {
+    margin-top: 15vw;
+    margin-bottom: 20vw;
+    h2 {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        z-index: 2;
+
+    }
+    h1 {
+    	color: rgb(255, 255, 255);
+        font-size: 60px;  
         z-index: 3;
         width: 100%;
+
     }
     button {
         width: 240px;
         height: 65px;
         border-radius: 3px;
-        font-family: "Montserrat";
+        font-family: $font-1;
         color: rgb(255, 255, 255);
         font-weight: 700;
         text-transform: uppercase;
@@ -77,45 +106,22 @@ header {
     }
     h1, h2, button {
         margin: 0 auto 40px auto;
+
     }
+
 }
-
-
 .services {
-    h1 {
-        font-size: 40px;
-        font-family: "Montserrat";
-        color: rgb(34, 34, 34);
-        font-weight: 700;
-        text-transform: uppercase;
-
-    }
-    h2 {
-        font-size: 16px;
-        font-family: "DroidSerif";
-        color: rgb(119, 119, 119);
-        font-style: italic;
-        line-height: 1.2;
-    }
-    h3 {
-        font-size: 18px;
-        font-family: "Montserrat";
-        color: rgb(34, 34, 34);
-        font-weight: bold;
-
-    }
     p {
         font-size: 14px;
-        font-family: "RobotoSlab";
+        font-family: $font-3;
         color: rgb(119, 119, 119);
         line-height: 1.2;
+
     }
     i {
         color: rgb(254, 209, 54);
         background-color: #fff;
-        border-style: solid;
-        border-width: 3px;
-        border-color: rgb(254, 209, 54);
+        border: 3px solid rgb(254, 209, 54);
         border-radius: 50%;
         line-height: 1.9;
         width: 75px;
@@ -127,62 +133,69 @@ header {
         &:hover {
             background-color: rgb(254, 209, 54);
             color: #000;
+
         }
+
     }
+
 }
 .portfolio {
     [class*="col"] {
         width: 290px;
         padding: 0;
+
     }
     h1 {
-        font-size: 40px;
-        font-family: "Montserrat";
-        color: rgb(34, 34, 34);
-        font-weight: bold;
-        text-transform: uppercase;
         line-height: 1.875;
         
     }
     h2 {
-        font-size: 16px;
-        font-family: "DroidSerif";
-        color: rgb(119, 119, 119);
-        font-style: italic;
-        line-height: 1.2;
         margin-bottom: 90px;
         
     }
     h3 {
-        font-size: 18px;
-        font-family: "Montserrat";
         color: rgb(51, 51, 51);
-        font-weight: bold;
-        line-height: 1.2;
         margin-top: 30px;
+
     }
     p {
         font-size: 14px;
-        font-family: "DroidSerif";
+        font-family: $font-2;
         color: rgb(115, 115, 115);
         font-style: italic;
         line-height: 1.2;
         margin-bottom: 80px;
+
     }
+
 }
 .about {
+	[class*="col-"] {
+		padding: 0px;
+		margin-bottom: 80px;
+	}
+	[class*="flex-column"]:nth-child(odd) {
+		margin: 10px 25px 0px 150px;
+	}
+	[class*="flex-column"]:nth-child(even) {
+		margin: 10px 150px 0px 25px;
+	}
+	img {
+		width: 183px;
+		height: 183px;
+	}
     h1 {
-        font-size: 18px;
-        font-family: "Montserrat";
-        color: rgb(34, 34, 34);
         font-weight: bold;
         text-transform: uppercase;
+        line-height: 1.875;
+
     }
     p {
         font-size: 14px;
-        font-family: "RobotoSlab";
+        font-family: $font-3;
         color: rgb(119, 119, 119);
         line-height: 1.2;
+
     }
     button {
         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
@@ -195,7 +208,7 @@ header {
         color: rgb(255, 255, 255);
         text-decoration: none;
         font-size: 18px;
-        font-family: "Montserrat";
+        font-family: $font-1;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
@@ -203,10 +216,11 @@ header {
         &:hover {
             border-color: rgb(254, 209, 54);
             color: rgb(0,0,0);
-        }  
+
+        }
+
     }
     
-
 }
 .team {
     img {  
@@ -218,39 +232,22 @@ header {
         transition: 5ms;
         &:hover {
             border-color: rgb(17, 17, 17);
+
         }
-    }
-    h1 {
-        font-size: 40px;
-        font-family: "Montserrat";
-        color: rgb(34, 34, 34);
-        font-weight: bold;
-        text-transform: uppercase;
-        line-height: 1.2;
-    }
-    h2 {
-        font-size: 16px;
-        font-family: "DroidSerif";
-        color: rgb(119, 119, 119);
-        font-style: italic;
-        line-height: 1.2;
 
     }
     h3 {
-        font-size: 16px;
-        font-family: "Montserrat";
-        color: rgb(34, 34, 34);
-        font-weight: bold;
         line-height: 3.125;
 
     }
     p {
         font-size: 16px;
-        font-family: "RobotoSlab";
+        font-family: $font-3;
         color: rgb(119, 119, 119);
         line-height: 1.2;
         &:only-child {
             margin-top: 40px;
+
         }
 
     }
@@ -266,26 +263,29 @@ header {
         i {
             padding-top: 7px;
         } 
+
     }   
+
 }
 .logo {
     img {
     margin-bottom: 60px;
     margin-left: 20px;
+
     }
+
 } 
 .contact {
     padding-top: 110px;
     width: 100%;
     position: relative;
     background-color: rgb(34, 34, 34);
-
-
     img {
         height: 90%;
         position: absolute;
         right: 0;
         object-fit: cover;
+
     }
     input, textarea {
         width: 100% !important;
@@ -294,7 +294,7 @@ header {
         margin-bottom: 33px;
         &::placeholder {
             font-size: 14px;
-            font-family: "Montserrat";
+            font-family: $font-1;
             color: rgb(187, 187, 187);
             font-weight: bold;
             text-transform: uppercase;
@@ -302,25 +302,14 @@ header {
         }
     }
     h1 {
-        
-        font-size: 40px;
-        font-family: "Montserrat";
         color: rgb(255, 255, 255);
-        font-weight: bold;
-        text-transform: uppercase;
-        line-height: 1.2;
     }
     h2 {
-        font-size: 16px;
-        font-family: "DroidSerif";
-        color: rgb(119, 119, 119);
-        font-style: italic;
-        line-height: 1.2;
         margin-bottom: 80px;
     }
     button {
         font-size: 18px;
-        font-family: "Montserrat";
+        font-family: $font-1;
         color: rgb(255, 255, 255);
         font-weight: bold;
         text-transform: uppercase;
@@ -334,9 +323,7 @@ header {
 
     }
 
-
 }
-
 footer {
     margin-top: 10px;
     .social {
@@ -353,14 +340,13 @@ footer {
                 padding-top: 12px;
                 
             }
+
         }
+
     }
-     
-
-
     p, a:only-child {
         font-size: 14px;
-        font-family: "Montserrat";
+        font-family: $font-1;
         color: rgb(85, 85, 85);
         line-height: 1.571;
         float: left;
@@ -368,29 +354,32 @@ footer {
 
     }
     a:only-child {
-        float: right; }
+        float: right;
+
+    }
 
 }
-
-
-
 .twitter:hover {
     border-color: rgb(0, 172, 237);
     background-color: rgb(0, 172, 237);
     color: #fff;
+
 }
 .facebook:hover {
     border-color: rgb(59, 89, 152);
     background-color: rgb(59, 89, 152);
     color: #fff;
+
 }
 .pinterest:hover {
     border-color: rgb(203, 32, 40);
     background-color: rgb(203, 32, 40);
     color: #fff;
+
 }
 .google:hover {
     border-color: rgb(218, 39, 19);
     background-color: rgb(218, 39, 19);
     color: #fff;
+
 }

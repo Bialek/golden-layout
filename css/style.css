@@ -13,7 +13,7 @@
 
 header {
   position: relative;
-  margin-bottom: 25cvw;
+  margin-bottom: 20vw;
 }
 
 .container {
@@ -37,12 +37,37 @@ header {
   font-size: 14px;
   font-family: "Montserrat";
   text-transform: uppercase;
-  text-align: center;
   padding: 0 20px;
 }
 
 .services, .portfolio, .about, .team {
-  margin-bottom: 16vw;
+  margin-bottom: 13vw;
+}
+
+.home h1, .services h1, .portfolio h1, .about h1, .team h1, .contact h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 40px;
+  color: #222222;
+}
+
+.home h2, .services h2, .portfolio h2, .about h2, .team h2, .contact h2 {
+  font-size: 16px;
+  font-family: "DroidSerif";
+  color: #777777;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.home h3, .services h3, .portfolio h3, .about h3, .team h3, .contact h3 {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .home {
@@ -50,22 +75,15 @@ header {
   margin-bottom: 20vw;
 }
 
-.home h1 {
+.home h2 {
   font-size: 30px;
-  font-family: "DroidSerif";
   color: white;
-  font-style: italic;
-  line-height: 1.2;
   z-index: 2;
 }
 
-.home h2 {
-  font-size: 60px;
-  font-family: "Montserrat";
+.home h1 {
   color: white;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.2;
+  font-size: 60px;
   z-index: 3;
   width: 100%;
 }
@@ -88,29 +106,6 @@ header {
   margin: 0 auto 40px auto;
 }
 
-.services h1 {
-  font-size: 40px;
-  font-family: "Montserrat";
-  color: #222222;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.services h2 {
-  font-size: 16px;
-  font-family: "DroidSerif";
-  color: #777777;
-  font-style: italic;
-  line-height: 1.2;
-}
-
-.services h3 {
-  font-size: 18px;
-  font-family: "Montserrat";
-  color: #222222;
-  font-weight: bold;
-}
-
 .services p {
   font-size: 14px;
   font-family: "RobotoSlab";
@@ -121,9 +116,7 @@ header {
 .services i {
   color: #fed136;
   background-color: #fff;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #fed136;
+  border: 3px solid #fed136;
   border-radius: 50%;
   line-height: 1.9;
   width: 75px;
@@ -145,29 +138,15 @@ header {
 }
 
 .portfolio h1 {
-  font-size: 40px;
-  font-family: "Montserrat";
-  color: #222222;
-  font-weight: bold;
-  text-transform: uppercase;
   line-height: 1.875;
 }
 
 .portfolio h2 {
-  font-size: 16px;
-  font-family: "DroidSerif";
-  color: #777777;
-  font-style: italic;
-  line-height: 1.2;
   margin-bottom: 90px;
 }
 
 .portfolio h3 {
-  font-size: 18px;
-  font-family: "Montserrat";
   color: #333333;
-  font-weight: bold;
-  line-height: 1.2;
   margin-top: 30px;
 }
 
@@ -180,12 +159,28 @@ header {
   margin-bottom: 80px;
 }
 
+.about [class*="col-"] {
+  padding: 0px;
+  margin-bottom: 80px;
+}
+
+.about [class*="flex-column"]:nth-child(odd) {
+  margin: 10px 25px 0px 150px;
+}
+
+.about [class*="flex-column"]:nth-child(even) {
+  margin: 10px 150px 0px 25px;
+}
+
+.about img {
+  width: 183px;
+  height: 183px;
+}
+
 .about h1 {
-  font-size: 18px;
-  font-family: "Montserrat";
-  color: #222222;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 1.875;
 }
 
 .about p {
@@ -231,28 +226,7 @@ header {
   border-color: #111111;
 }
 
-.team h1 {
-  font-size: 40px;
-  font-family: "Montserrat";
-  color: #222222;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
-.team h2 {
-  font-size: 16px;
-  font-family: "DroidSerif";
-  color: #777777;
-  font-style: italic;
-  line-height: 1.2;
-}
-
 .team h3 {
-  font-size: 16px;
-  font-family: "Montserrat";
-  color: #222222;
-  font-weight: bold;
   line-height: 3.125;
 }
 
@@ -337,20 +311,10 @@ header {
 }
 
 .contact h1 {
-  font-size: 40px;
-  font-family: "Montserrat";
   color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
 }
 
 .contact h2 {
-  font-size: 16px;
-  font-family: "DroidSerif";
-  color: #777777;
-  font-style: italic;
-  line-height: 1.2;
   margin-bottom: 80px;
 }
 
