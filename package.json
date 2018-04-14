@@ -11,7 +11,7 @@
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm-run-all build:* && npm run test",
     "build:clean": "node_modules/.bin/rimraf css/* !css/style.prefixed.css",
-    "build:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "build:sass": "node-sass --output-style compressed --source-map true -o css sass",
     "build:sautoprefixer": "autoprefixer-cli css/style.css",
     "watch:sassprefixer": "onchange sass/style.scss -- npm-run-all -p build:s*",
     "watch:browser-sync": "browser-sync start --server --files 'css/*.css' '*.html'",

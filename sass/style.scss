@@ -170,19 +170,41 @@ header {
 
 }
 .about {
-	[class*="col-"] {
-		padding: 0px;
+	.item, h2 {
 		margin-bottom: 80px;
+
 	}
-	[class*="flex-column"]:nth-child(odd) {
-		margin: 10px 25px 0px 150px;
+	.item {
+		min-height: 183px;
+		width: 100%;
+		div {
+			@media (min-width: 768px) {
+				padding: 10px 20px 0px 100px;
+			}
+		}
+		&:nth-child(odd)>div {
+			@media (min-width: 768px) {
+				padding: 10px 50px 0px;	
+			}
+			
+		}
+		
 	}
-	[class*="flex-column"]:nth-child(even) {
-		margin: 10px 150px 0px 25px;
+	img, button {
+		position: static;
+  		left: 0;
+  		right: 0;
+  		display: block;
+  		margin: 0 auto;
+  		@media (min-width: 768px) {
+			position: absolute;
+		}
+
 	}
 	img {
 		width: 183px;
-		height: 183px;
+		height: 183px;	
+
 	}
     h1 {
         font-weight: bold;
