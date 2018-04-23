@@ -177,6 +177,22 @@ header {
 	.item {
 		min-height: 183px;
 		width: 100%;
+		&:after {
+		    content: '';
+		    width: 2px;
+		    height: 250px;
+		    background-color: #ececec;
+		    display: block;
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		    z-index: -1;
+		    margin-top: -100px;
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
 		div {
 			@media (min-width: 768px) {
 				padding: 10px 20px 0px 100px;
@@ -186,9 +202,7 @@ header {
 			@media (min-width: 768px) {
 				padding: 10px 50px 0px;	
 			}
-			
-		}
-		
+		}		
 	}
 	img, button {
 		position: static;
@@ -250,7 +264,6 @@ header {
         border-width: 7px;
         border-color: rgb(255, 255, 255);
         border-radius: 50%;
-        background-color: rgb(17, 17, 17); 
         transition: 5ms;
         &:hover {
             border-color: rgb(17, 17, 17);
@@ -309,8 +322,8 @@ header {
         object-fit: cover;
 
     }
-    input, textarea {
-        width: 100% !important;
+    .form-control {
+        width: 100%;
         border-radius: 2px;
         border: 1px solid #ccc;
         margin-bottom: 33px;
